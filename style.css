@@ -1,0 +1,20 @@
+body { font-family: sans-serif; text-align: center; background: #f4f4f4; }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 15px;
+    padding: 20px;
+}
+
+.grid-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover; /* Prevents stretching */
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.grid-container img:hover { transform: scale(1.05); }
+
+.video-container { max-width: 800px; margin: 20px auto; }
